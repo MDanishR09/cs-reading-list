@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foundations of Computer Science — Reading List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Styles/style.css" />
+  <script src="Scripts/script.js" defer=true></script>
+</head>
+<body>
+
+<header>
+  <div class="header-eyebrow">Curated Reading List</div>
+  <h1>Foundations of<br/><span>Computer Science</span></h1>
+  <p class="header-desc">A chronological survey of the most influential papers, essays, and masterworks that shaped modern computing — from Turing's 1936 proof to the age of large language models.</p>
+  <div class="header-stats">
+    <div class="stat"><span class="stat-num" id="total-papers">57</span><span class="stat-label">Papers</span></div>
+    <div class="stat"><span class="stat-num">9</span><span class="stat-label">Sections</span></div>
+    <div class="stat"><span class="stat-num">1936–2022</span><span class="stat-label">Time Span</span></div>
+    <div class="stat"><span class="stat-num" id="read-count">0</span><span class="stat-label">Read</span></div>
+  </div>
+</header>
+
+<div class="progress-section">
+  <div class="progress-label">
+    <span>Reading progress</span>
+    <span id="progress-pct">0%</span>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+</div>
+
+<div class="search-wrap">
+  <input class="search-input" type="search" placeholder="Search papers, authors, topics…" id="search" autocomplete="off" />
+</div>
+
+<main id="main-content">
+
+  <!-- SECTION 1 -->
+  <div class="section open" data-section="1">
+    <div class="section-header" onclick="toggleSection(this)">
+      <div class="section-left">
+        <span class="section-num">01</span>
+        <span class="section-title">Theoretical Foundations &amp; Logic</span>
+      </div>
+      <div class="section-right">
+        <span class="section-count">6 papers</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+    </div>
+    <div class="section-body">
+      <div class="paper" data-title="On Computable Numbers, with an Application to the Entscheidungsproblem" data-author="Alan Turing">
+        <div class="paper-year">1936</div>
+        <div class="paper-content">
+          <div class="paper-title">On Computable Numbers, with an Application to the Entscheidungsproblem</div>
+          <div class="paper-author">Alan Turing</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="A Mathematical Theory of Communication" data-author="Claude Shannon">
+        <div class="paper-year">1948</div>
+        <div class="paper-content">
+          <div class="paper-title">A Mathematical Theory of Communication</div>
+          <div class="paper-author">Claude Shannon</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://web.archive.org/web/20150204015826/http://cm.bell-labs.com/cm/ms/what/shannonday/shannon1948.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Solution of a Problem in Concurrent Programming Control" data-author="Edsger Dijkstra">
+        <div class="paper-year">1965</div>
+        <div class="paper-content">
+          <div class="paper-title">Solution of a Problem in Concurrent Programming Control</div>
+          <div class="paper-author">Edsger Dijkstra</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://dl.acm.org/doi/10.1145/365559.365617" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Go To Statement Considered Harmful" data-author="Edsger Dijkstra">
+        <div class="paper-year">1968</div>
+        <div class="paper-content">
+          <div class="paper-title">Go To Statement Considered Harmful</div>
+          <div class="paper-author">Edsger Dijkstra</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://dl.acm.org/doi/10.1145/362929.362947" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="An Axiomatic Basis for Computer Programming" data-author="C.A.R. Hoare">
+        <div class="paper-year">1968</div>
+        <div class="paper-content">
+          <div class="paper-title">An Axiomatic Basis for Computer Programming</div>
+          <div class="paper-author">C.A.R. Hoare</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://dl.acm.org/doi/10.1145/363235.363259" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="The Complexity of Theorem-Proving Procedures" data-author="Stephen Cook">
+        <div class="paper-year">1971</div>
+        <div class="paper-content">
+          <div class="paper-title">The Complexity of Theorem-Proving Procedures</div>
+          <div class="paper-author">Stephen Cook</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://dl.acm.org/doi/pdf/10.1145/800157.805047" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 2 -->
+  <div class="section" data-section="2">
+    <div class="section-header" onclick="toggleSection(this)">
+      <div class="section-left">
+        <span class="section-num">02</span>
+        <span class="section-title">Algorithms &amp; Data Structures</span>
+      </div>
+      <div class="section-right">
+        <span class="section-count">2 papers</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+    </div>
+    <div class="section-body">
+      <div class="paper" data-title="Quicksort" data-author="C.A.R. Hoare">
+        <div class="paper-year">1962</div>
+        <div class="paper-content">
+          <div class="paper-title">Quicksort</div>
+          <div class="paper-author">C.A.R. Hoare</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://dl.acm.org/doi/10.1145/366622.366644" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Programming Pearls: Algorithm Design Techniques" data-author="Jon Bentley">
+        <div class="paper-year">1984</div>
+        <div class="paper-content">
+          <div class="paper-title">Programming Pearls: Algorithm Design Techniques</div>
+          <div class="paper-author">Jon Bentley</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://dl.acm.org/doi/pdf/10.1145/358107.358113" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Column</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 3 -->
+  <div class="section" data-section="3">
+    <div class="section-header" onclick="toggleSection(this)">
+      <div class="section-left">
+        <span class="section-num">03</span>
+        <span class="section-title">Programming Languages &amp; Compilers</span>
+      </div>
+      <div class="section-right">
+        <span class="section-count">4 papers</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+    </div>
+    <div class="section-body">
+      <div class="paper" data-title="Recursive Functions of Symbolic Expressions and Their Computation by Machine (LISP)" data-author="John McCarthy">
+        <div class="paper-year">1960</div>
+        <div class="paper-content">
+          <div class="paper-title">Recursive Functions of Symbolic Expressions and Their Computation by Machine (LISP)</div>
+          <div class="paper-author">John McCarthy</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://dl.acm.org/doi/10.1145/367177.367199" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Report on the Algorithmic Language ALGOL 60" data-author="Naur et al.">
+        <div class="paper-year">1960</div>
+        <div class="paper-content">
+          <div class="paper-title">Report on the Algorithmic Language ALGOL 60</div>
+          <div class="paper-author">Naur et al.</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://dl.acm.org/doi/10.1145/367236.367262" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="A Theory of Type Polymorphism in Programming" data-author="Robin Milner">
+        <div class="paper-year">1977</div>
+        <div class="paper-content">
+          <div class="paper-title">A Theory of Type Polymorphism in Programming</div>
+          <div class="paper-author">Robin Milner</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://www.sciencedirect.com/science/article/pii/0022000078900144" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Can Programming Be Liberated from the von Neumann Style?" data-author="John Backus">
+        <div class="paper-year">1978</div>
+        <div class="paper-content">
+          <div class="paper-title">Can Programming Be Liberated from the von Neumann Style?</div>
+          <div class="paper-author">John Backus</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://dl.acm.org/doi/10.1145/359576.359579" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 4 -->
+  <div class="section" data-section="4">
+    <div class="section-header" onclick="toggleSection(this)">
+      <div class="section-left">
+        <span class="section-num">04</span>
+        <span class="section-title">Physical Architecture, OS &amp; Networking</span>
+      </div>
+      <div class="section-right">
+        <span class="section-count">7 papers</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+    </div>
+    <div class="section-body">
+      <div class="paper" data-title="First Draft of a Report on the EDVAC" data-author="John von Neumann">
+        <div class="paper-year">1945</div>
+        <div class="paper-content">
+          <div class="paper-title">First Draft of a Report on the EDVAC</div>
+          <div class="paper-author">John von Neumann</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://archive.org/details/firstdraftofrepo00vonn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title='The Structure of the "THE" Multiprogramming System' data-author="Edsger Dijkstra">
+        <div class="paper-year">1968</div>
+        <div class="paper-content">
+          <div class="paper-title">The Structure of the "THE" Multiprogramming System</div>
+          <div class="paper-author">Edsger Dijkstra</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://dl.acm.org/doi/10.1145/363095.363143" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="The UNIX Time-Sharing System" data-author="Dennis Ritchie & Ken Thompson">
+        <div class="paper-year">1974</div>
+        <div class="paper-content">
+          <div class="paper-title">The UNIX Time-Sharing System</div>
+          <div class="paper-author">Dennis Ritchie &amp; Ken Thompson</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://www.bell-labs.com/usr/dmr/www/chist.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="A Protocol for Packet Network Intercommunication" data-author="Vint Cerf & Bob Kahn">
+        <div class="paper-year">1974</div>
+        <div class="paper-content">
+          <div class="paper-title">A Protocol for Packet Network Intercommunication</div>
+          <div class="paper-author">Vint Cerf &amp; Bob Kahn</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://ieeexplore.ieee.org/document/1092259" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Congestion Avoidance and Control" data-author="Van Jacobson">
+        <div class="paper-year">1988</div>
+        <div class="paper-content">
+          <div class="paper-title">Congestion Avoidance and Control</div>
+          <div class="paper-author">Van Jacobson</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://dl.acm.org/doi/10.1145/52324.52356" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Information Management: A Proposal" data-author="Tim Berners-Lee">
+        <div class="paper-year">1989</div>
+        <div class="paper-content">
+          <div class="paper-title">Information Management: A Proposal</div>
+          <div class="paper-author">Tim Berners-Lee</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://www.w3.org/History/1989/proposal.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Proposal</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Xen and the Art of Virtualization" data-author="Barham et al.">
+        <div class="paper-year">2003</div>
+        <div class="paper-content">
+          <div class="paper-title">Xen and the Art of Virtualization</div>
+          <div class="paper-author">Barham et al.</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://dl.acm.org/doi/10.1145/945445.945462" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 5 -->
+  <div class="section" data-section="5">
+    <div class="section-header" onclick="toggleSection(this)">
+      <div class="section-left">
+        <span class="section-num">05</span>
+        <span class="section-title">Databases &amp; Distributed Systems</span>
+      </div>
+      <div class="section-right">
+        <span class="section-count">8 papers</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+    </div>
+    <div class="section-body">
+      <div class="paper" data-title="A Relational Model of Data for Large Shared Data Banks" data-author="Edgar F. Codd">
+        <div class="paper-year">1970</div>
+        <div class="paper-content">
+          <div class="paper-title">A Relational Model of Data for Large Shared Data Banks</div>
+          <div class="paper-author">Edgar F. Codd</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://dl.acm.org/doi/pdf/10.1145/362384.362685" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Time, Clocks, and the Ordering of Events in a Distributed System" data-author="Leslie Lamport">
+        <div class="paper-year">1978</div>
+        <div class="paper-content">
+          <div class="paper-title">Time, Clocks, and the Ordering of Events in a Distributed System</div>
+          <div class="paper-author">Leslie Lamport</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://lamport.azurewebsites.net/pubs/time-clocks.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="The Byzantine Generals Problem" data-author="Lamport, Shostak & Pease">
+        <div class="paper-year">1982</div>
+        <div class="paper-content">
+          <div class="paper-title">The Byzantine Generals Problem</div>
+          <div class="paper-author">Leslie Lamport, Robert Shostak &amp; Marshall Pease</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://lamport.azurewebsites.net/pubs/byz.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="The Google File System" data-author="Ghemawat, Gobioff & Leung">
+        <div class="paper-year">2003</div>
+        <div class="paper-content">
+          <div class="paper-title">The Google File System</div>
+          <div class="paper-author">Ghemawat, Gobioff &amp; Leung</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="MapReduce: Simplified Data Processing on Large Clusters" data-author="Dean & Ghemawat">
+        <div class="paper-year">2004</div>
+        <div class="paper-content">
+          <div class="paper-title">MapReduce: Simplified Data Processing on Large Clusters</div>
+          <div class="paper-author">Dean &amp; Ghemawat</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Dynamo: Amazon's Highly Available Key-Value Store" data-author="DeCandia et al.">
+        <div class="paper-year">2007</div>
+        <div class="paper-content">
+          <div class="paper-title">Dynamo: Amazon's Highly Available Key-Value Store</div>
+          <div class="paper-author">DeCandia et al.</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://dl.acm.org/doi/10.1145/1294261.1294281" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Bitcoin: A Peer-to-Peer Electronic Cash System" data-author="Satoshi Nakamoto">
+        <div class="paper-year">2008</div>
+        <div class="paper-content">
+          <div class="paper-title">Bitcoin: A Peer-to-Peer Electronic Cash System</div>
+          <div class="paper-author">Satoshi Nakamoto</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Spanner: Google's Globally Distributed Database" data-author="Corbett et al.">
+        <div class="paper-year">2012</div>
+        <div class="paper-content">
+          <div class="paper-title">Spanner: Google's Globally Distributed Database</div>
+          <div class="paper-author">Corbett et al.</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://dl.acm.org/doi/10.1145/2491245" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 6 -->
+  <div class="section" data-section="6">
+    <div class="section-header" onclick="toggleSection(this)">
+      <div class="section-left">
+        <span class="section-num">06</span>
+        <span class="section-title">Security &amp; Cryptography</span>
+      </div>
+      <div class="section-right">
+        <span class="section-count">2 papers</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+    </div>
+    <div class="section-body">
+      <div class="paper" data-title="New Directions in Cryptography" data-author="Whitfield Diffie & Martin Hellman">
+        <div class="paper-year">1976</div>
+        <div class="paper-content">
+          <div class="paper-title">New Directions in Cryptography</div>
+          <div class="paper-author">Whitfield Diffie &amp; Martin Hellman</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://ee.stanford.edu/~hellman/publications/24.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="A Method for Obtaining Digital Signatures and Public-Key Cryptosystems (RSA)" data-author="Rivest, Shamir & Adleman">
+        <div class="paper-year">1978</div>
+        <div class="paper-content">
+          <div class="paper-title">A Method for Obtaining Digital Signatures and Public-Key Cryptosystems (RSA)</div>
+          <div class="paper-author">Rivest, Shamir &amp; Adleman</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://dl.acm.org/doi/10.1145/359340.359342" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 7 -->
+  <div class="section" data-section="7">
+    <div class="section-header" onclick="toggleSection(this)">
+      <div class="section-left">
+        <span class="section-num">07</span>
+        <span class="section-title">Software Engineering &amp; Interface Design</span>
+      </div>
+      <div class="section-right">
+        <span class="section-count">6 papers</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+    </div>
+    <div class="section-body">
+      <div class="paper" data-title="Man-Computer Symbiosis" data-author="J.C.R. Licklider">
+        <div class="paper-year">1960</div>
+        <div class="paper-content">
+          <div class="paper-title">Man-Computer Symbiosis</div>
+          <div class="paper-author">J.C.R. Licklider</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://ieeexplore.ieee.org/document/5214051" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Augmenting Human Intellect: A Conceptual Framework" data-author="Douglas Engelbart">
+        <div class="paper-year">1962</div>
+        <div class="paper-content">
+          <div class="paper-title">Augmenting Human Intellect: A Conceptual Framework</div>
+          <div class="paper-author">Douglas Engelbart</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://www.dougengelbart.org/pubs/augment-3906.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Sketchpad: A Man-Machine Graphical Communication System" data-author="Ivan Sutherland">
+        <div class="paper-year">1963</div>
+        <div class="paper-content">
+          <div class="paper-title">Sketchpad: A Man-Machine Graphical Communication System</div>
+          <div class="paper-author">Ivan Sutherland</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://dl.acm.org/doi/10.1145/1461551.1461591" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="On the Criteria To Be Used in Decomposing Systems into Modules" data-author="David Parnas">
+        <div class="paper-year">1972</div>
+        <div class="paper-content">
+          <div class="paper-title">On the Criteria To Be Used in Decomposing Systems into Modules</div>
+          <div class="paper-author">David Parnas</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://dl.acm.org/doi/pdf/10.1145/361598.361623" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="The Mythical Man-Month" data-author="Fred Brooks">
+        <div class="paper-year">1975</div>
+        <div class="paper-content">
+          <div class="paper-title">The Mythical Man-Month</div>
+          <div class="paper-author">Fred Brooks</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://archive.org/details/mythicalmanmonth00broo" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Book</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="The Protection of Information in Computer Systems" data-author="Saltzer & Schroeder">
+        <div class="paper-year">1975</div>
+        <div class="paper-content">
+          <div class="paper-title">The Protection of Information in Computer Systems</div>
+          <div class="paper-author">Saltzer &amp; Schroeder</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://dl.acm.org/doi/10.1109/PROC.1975.9939" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 8 -->
+  <div class="section" data-section="8">
+    <div class="section-header" onclick="toggleSection(this)">
+      <div class="section-left">
+        <span class="section-num">08</span>
+        <span class="section-title">Computer Graphics &amp; Vision</span>
+      </div>
+      <div class="section-right">
+        <span class="section-count">2 papers</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+    </div>
+    <div class="section-body">
+      <div class="paper" data-title="An Improved Illumination Model for Shaded Display" data-author="Turner Whitted">
+        <div class="paper-year">1980</div>
+        <div class="paper-content">
+          <div class="paper-title">An Improved Illumination Model for Shaded Display</div>
+          <div class="paper-author">Turner Whitted</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://dl.acm.org/doi/10.1145/358876.358882" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="The Rendering Equation" data-author="James Kajiya">
+        <div class="paper-year">1986</div>
+        <div class="paper-content">
+          <div class="paper-title">The Rendering Equation</div>
+          <div class="paper-author">James Kajiya</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://dl.acm.org/doi/10.1145/15922.15902" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 9 -->
+  <div class="section" data-section="9">
+    <div class="section-header" onclick="toggleSection(this)">
+      <div class="section-left">
+        <span class="section-num">09</span>
+        <span class="section-title">The Evolution of AI &amp; Search</span>
+      </div>
+      <div class="section-right">
+        <span class="section-count">19 papers</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+    </div>
+    <div class="section-body">
+      <div class="paper" data-title="Computing Machinery and Intelligence" data-author="Alan Turing">
+        <div class="paper-year">1950</div>
+        <div class="paper-content">
+          <div class="paper-title">Computing Machinery and Intelligence</div>
+          <div class="paper-author">Alan Turing</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://www.cs.ox.ac.uk/activities/ieg/e-library/sources/t_article.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="The Perceptron: A Probabilistic Model for Information Storage and Organization" data-author="Frank Rosenblatt">
+        <div class="paper-year">1958</div>
+        <div class="paper-content">
+          <div class="paper-title">The Perceptron: A Probabilistic Model for Information Storage and Organization</div>
+          <div class="paper-author">Frank Rosenblatt</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://psycnet.apa.org/record/1959-09865-001" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Perceptrons: An Introduction to Computational Geometry" data-author="Marvin Minsky & Seymour Papert">
+        <div class="paper-year">1969</div>
+        <div class="paper-content">
+          <div class="paper-title">Perceptrons: An Introduction to Computational Geometry</div>
+          <div class="paper-author">Marvin Minsky &amp; Seymour Papert</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://archive.org/details/perceptronsintro0000mins" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Book</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Learning representations by back-propagating errors" data-author="Rumelhart, Hinton & Williams">
+        <div class="paper-year">1986</div>
+        <div class="paper-content">
+          <div class="paper-title">Learning Representations by Back-Propagating Errors</div>
+          <div class="paper-author">Rumelhart, Hinton &amp; Williams</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://www.nature.com/articles/323533a0" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="A Training Algorithm for Optimal Margin Classifiers" data-author="Boser, Guyon & Vapnik">
+        <div class="paper-year">1992</div>
+        <div class="paper-content">
+          <div class="paper-title">A Training Algorithm for Optimal Margin Classifiers</div>
+          <div class="paper-author">Boser, Guyon &amp; Vapnik</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://dl.acm.org/doi/10.1145/130385.130401" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="A Decision-Theoretic Generalization of On-Line Learning and an Application to Boosting" data-author="Freund & Schapire">
+        <div class="paper-year">1995</div>
+        <div class="paper-content">
+          <div class="paper-title">A Decision-Theoretic Generalization of On-Line Learning and an Application to Boosting</div>
+          <div class="paper-author">Freund &amp; Schapire</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://www.sciencedirect.com/science/article/pii/S002200009791504X" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Long Short-Term Memory" data-author="Hochreiter & Schmidhuber">
+        <div class="paper-year">1997</div>
+        <div class="paper-content">
+          <div class="paper-title">Long Short-Term Memory</div>
+          <div class="paper-author">Hochreiter &amp; Schmidhuber</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://direct.mit.edu/neco/article-abstract/9/8/1735/6109" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Reinforcement Learning: An Introduction" data-author="Sutton & Barto">
+        <div class="paper-year">1998</div>
+        <div class="paper-content">
+          <div class="paper-title">Reinforcement Learning: An Introduction</div>
+          <div class="paper-author">Sutton &amp; Barto</div>
+          <div class="paper-footer">
+            <a class="read-link" href="http://incompleteideas.net/book/the-book-2nd.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Book</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="The Anatomy of a Large-Scale Hypertextual Web Search Engine" data-author="Sergey Brin & Larry Page">
+        <div class="paper-year">1998</div>
+        <div class="paper-content">
+          <div class="paper-title">The Anatomy of a Large-Scale Hypertextual Web Search Engine</div>
+          <div class="paper-author">Sergey Brin &amp; Larry Page</div>
+          <div class="paper-footer">
+            <a class="read-link" href="http://infolab.stanford.edu/~pub/papers/google.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="The PageRank Citation Ranking: Bringing Order to the Web" data-author="Page, Brin et al.">
+        <div class="paper-year">1999</div>
+        <div class="paper-content">
+          <div class="paper-title">The PageRank Citation Ranking: Bringing Order to the Web</div>
+          <div class="paper-author">Page, Brin et al.</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://www.semanticscholar.org/paper/The-PageRank-Citation-Ranking%3A-Bringing-Order-to-Page-Brin/eb82d3035849cd23578096462ba419b53198a556" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="ImageNet Classification with Deep Convolutional Neural Networks" data-author="Krizhevsky, Sutskever & Hinton">
+        <div class="paper-year">2012</div>
+        <div class="paper-content">
+          <div class="paper-title">ImageNet Classification with Deep Convolutional Neural Networks</div>
+          <div class="paper-author">Krizhevsky, Sutskever &amp; Hinton</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://papers.nips.cc/paper/2012/file/c3982bc38a8db228b915fea8b800b34d-Paper.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Generative Adversarial Networks" data-author="Goodfellow et al.">
+        <div class="paper-year">2014</div>
+        <div class="paper-content">
+          <div class="paper-title">Generative Adversarial Networks</div>
+          <div class="paper-author">Goodfellow et al.</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://arxiv.org/abs/1406.2661" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Human-Level Control through Deep Reinforcement Learning" data-author="Mnih et al. (DeepMind)">
+        <div class="paper-year">2015</div>
+        <div class="paper-content">
+          <div class="paper-title">Human-Level Control through Deep Reinforcement Learning</div>
+          <div class="paper-author">Mnih et al. (DeepMind)</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://www.nature.com/articles/nature14236" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Deep Residual Learning for Image Recognition" data-author="He et al.">
+        <div class="paper-year">2016</div>
+        <div class="paper-content">
+          <div class="paper-title">Deep Residual Learning for Image Recognition</div>
+          <div class="paper-author">He et al.</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://arxiv.org/abs/1512.03385" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Mastering the Game of Go without Human Knowledge" data-author="Silver et al. (DeepMind)">
+        <div class="paper-year">2017</div>
+        <div class="paper-content">
+          <div class="paper-title">Mastering the Game of Go without Human Knowledge</div>
+          <div class="paper-author">Silver et al. (DeepMind)</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://www.nature.com/articles/nature24270" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Attention Is All You Need" data-author="Vaswani et al. (Google)">
+        <div class="paper-year">2017</div>
+        <div class="paper-content">
+          <div class="paper-title">Attention Is All You Need</div>
+          <div class="paper-author">Vaswani et al. (Google)</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Proximal Policy Optimization Algorithms (PPO)" data-author="Schulman et al. (OpenAI)">
+        <div class="paper-year">2017</div>
+        <div class="paper-content">
+          <div class="paper-title">Proximal Policy Optimization Algorithms (PPO)</div>
+          <div class="paper-author">Schulman et al. (OpenAI)</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://arxiv.org/abs/1707.06347" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Language Models are Few-Shot Learners" data-author="Brown et al. (OpenAI)">
+        <div class="paper-year">2020</div>
+        <div class="paper-content">
+          <div class="paper-title">Language Models are Few-Shot Learners</div>
+          <div class="paper-author">Brown et al. (OpenAI)</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://arxiv.org/abs/2005.14165" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="paper" data-title="Constitutional AI: Harmlessness from AI Feedback" data-author="Bai et al. (Anthropic)">
+        <div class="paper-year">2022</div>
+        <div class="paper-content">
+          <div class="paper-title">Constitutional AI: Harmlessness from AI Feedback</div>
+          <div class="paper-author">Bai et al. (Anthropic)</div>
+          <div class="paper-footer">
+            <a class="read-link" href="https://arxiv.org/abs/2212.08073" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read Paper</a>
+            <button class="done-btn" onclick="toggleDone(this)"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Mark read</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="no-results" id="no-results">No papers match your search.</div>
+
+  <!-- STRATEGY -->
+  <div class="strategy">
+    <div class="strategy-title">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      Progress Strategy
+    </div>
+    <div class="strategy-item">Read the paper and highlight key takeaways.</div>
+    <div class="strategy-item">Write a 1-page summary in the <code style="font-family:'Space Mono',monospace;font-size:12px;background:var(--accent-dim);padding:1px 5px;border-radius:3px;color:var(--accent)">notes/</code> directory.</div>
+    <div class="strategy-item">Connect the historical concepts to modern software engineering patterns you use today.</div>
+  </div>
+
+</main>
+
+</body>
+</html>
+
