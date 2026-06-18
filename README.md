@@ -141,7 +141,7 @@ A curated collection of the most influential research papers, essays, and master
 
 ---
 
-## 📈 My Progress Strategy
+## 📈 Our Progress Strategy
 - [ ] Read the paper and highlight key takeaways.
 - [ ] Write a 1-page summary in the `notes/` directory.
-- [ ] Connect the historical concepts to modern software engineering patterns I use today.
+- [ ] Connect the historical concepts to modern software engineering patterns we use today.
