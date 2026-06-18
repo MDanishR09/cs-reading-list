@@ -1,6 +1,3 @@
-# cs-reading-list
-A curated, chronological roadmap of the foundational research papers and masterworks that shaped modern computer science. From Turing to Transformers.
-
 # Foundations of Computer Science: A Chronological Reading List
 
 A curated collection of the most influential research papers, essays, and masterworks that shaped the landscape of modern computer science—spanning from foundational logic and hardware architecture to distributed systems and state-of-the-art artificial intelligence.
